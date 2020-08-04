@@ -5,8 +5,8 @@ install.packages("devtools")
 library(devtools)
 install_github("ibkstore/kmcut2")
 
-# <- Download kmcut2.tar.gz and install from a local folder ->
-install.packages("C:/test/kmcut2.tar.gz", repos = NULL, type = "source")
+# <- Download kmcut_2.0.tar.gz and install from a local folder ->
+install.packages("C:/test/kmcut_2.0.tar.gz", repos = NULL, type = "source")
 install.packages(c("survival", "stringr", "data.table","pracma"))
 
 # View the example survival data file
@@ -75,7 +75,7 @@ sdat = system.file("extdata", "survival_data_295.txt", package="kmcut")
 # Use the cutoff=5 to stratify the samples and remove features that have less than 90% unique # values (this eliminates MYH2 gene)
 kmucut(fname=fdat, sfname=sdat, wdir="c:/test", cutoff=5, min_uval=90)
 
-# Example of how to use "kmvalcut" with the data files included in the package 
+# Example of how to use "kmvalcut" with the data files included in the package
 library(stats)
 library(survival)
 library(stringr)
@@ -114,7 +114,7 @@ library(kmcut)
 # Load example gene expression data and survival data for 2 genes and 295 samples
 fdat = system.file("extdata", "example_genes_295.txt", package="kmcut")
 sdat = system.file("extdata", "survival_data_295.txt", package="kmcut")
-# Use the example dataset as both a training dataset and as a test dataset (that is, perform a 
+# Use the example dataset as both a training dataset and as a test dataset (that is, perform a
 # resubstitution). Note that in a real world application training and test datasets will be different from one another.
 ucoxpred(fname1=fdat, sfname1=sdat, fname2=fdat, sfname2=sdat, wdir="c:/test")
 
