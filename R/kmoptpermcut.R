@@ -135,6 +135,9 @@ edat = read.delim(fname, header = TRUE, row.names = 1)
 n_genes1 = length(rownames(edat))
 n_genes1
 
+# The number of samples in the table
+N = length(colnames(edat))
+
 # Remove genes that have less than MIN_UVAL% of unique values
 rv = logical(length = n_genes1)
 
