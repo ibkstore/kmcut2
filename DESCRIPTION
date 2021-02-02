@@ -1,10 +1,10 @@
 Package: kmcut
 Type: Package
-Title: A package for the optimized Kaplan Meier analysis and identification and validation of prognostic gene expression based biomarkers.
+Title: A package for the optimized Kaplan Meier analysis and identification and validation of prognostic biomarkers.
 Version: 2.0
 Author: Igor B. Kuznetsov and Javed Khan
 Maintainer: The package maintainer <ikuznetsov@albany.edu>
-Description: The main purpose of the package is to identify  potential prognostic gene signatures and an optimal numeric cutoff for each signature that can be used to stratify a group of test subjects (samples) into two sub-groups with significantly different survival (better vs. worse). The main requirement of the package is that for a group of test subjects (such as patients) two types of data are available: (i) right-censored survival time data and (ii) at least one gene expression-like feature with a large proportion of unique values describing each test subject. 
+Description: The main purpose of the package is to identify  potential prognostic gene signatures and an optimal numeric cutoff for each signature that can be used to classify a group of test subjects (samples) into two sub-groups with significantly different survival (better vs. worse). The main requirement of the package is that for a group of test subjects (such as patients) two types of data are available: (i) right-censored survival time data and (ii) at least one gene expression-like feature with a large proportion of unique values describing each test subject. 
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
@@ -15,4 +15,4 @@ Imports:
     survival,
     tools,
     pracma
-RoxygenNote: 6.1.1
+RoxygenNote: 7.1.1
