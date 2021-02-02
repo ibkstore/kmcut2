@@ -5,8 +5,16 @@
 \title{For each feature in the input file, this function fits a univariate Cox regression model on a training dataset and then uses the model
 to predict risk scores for a test dataset.}
 \usage{
-ucoxpred(fname1, sfname1, fname2, sfname2, wdir, min_uval = 50,
-  psort = FALSE, verbose = TRUE)
+ucoxpred(
+  fname1,
+  sfname1,
+  fname2,
+  sfname2,
+  wdir,
+  min_uval = 50,
+  psort = FALSE,
+  verbose = TRUE
+)
 }
 \arguments{
 \item{fname1}{character vector that specifies the name of the training file with feature(s) for each sample. The file must be tab-delimited,

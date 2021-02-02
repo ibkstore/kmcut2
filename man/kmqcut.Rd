@@ -5,8 +5,16 @@
 \title{For each feature uses the cutoff supplied as quantile (in 0 to 100 range) to stratify samples into 2 groups,
 plots Kaplan-Meier survival curves, and calculates the log-rank test p-value}
 \usage{
-kmqcut(fname, sfname, wdir, quant = 50, min_uval = 50, psort = FALSE,
-  wlabels = TRUE, wpdf = TRUE)
+kmqcut(
+  fname,
+  sfname,
+  wdir,
+  quant = 50,
+  min_uval = 50,
+  psort = FALSE,
+  wlabels = TRUE,
+  wpdf = TRUE
+)
 }
 \arguments{
 \item{fname}{character vector that specifies the name of the file with feature(s) for each sample. The file must be tab-delimited,

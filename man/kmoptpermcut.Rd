@@ -5,10 +5,21 @@
 \title{For each feature finds a cutoff that optimally stratifies samples into 2 groups, plots Kaplan-Meier survival curves
 and observed vs. expected optimization plot. Then, uses permutation test to estimate the statistical significance of the optimal cutoff.}
 \usage{
-kmoptpermcut(fname, sfname, wdir, seed = NULL, min_fraction = 0.1,
-  min_up_down = 1, n_iter = 100, peak_tolerance = 0.1,
-  psort = FALSE, min_uval = 50, wlabels = TRUE, wpdf = TRUE,
-  verbose = TRUE)
+kmoptpermcut(
+  fname,
+  sfname,
+  wdir,
+  seed = NULL,
+  min_fraction = 0.1,
+  min_up_down = 1,
+  n_iter = 100,
+  peak_tolerance = 0.1,
+  psort = FALSE,
+  min_uval = 50,
+  wlabels = TRUE,
+  wpdf = TRUE,
+  verbose = TRUE
+)
 }
 \arguments{
 \item{fname}{character vector that specifies the name of the file with feature(s) for each sample. The file must be tab-delimited,

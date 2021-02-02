@@ -2,14 +2,14 @@
 % Please edit documentation in R/extractcolumns.r
 \name{extractcolumns}
 \alias{extractcolumns}
-\title{Extract a set of columns (such as a sub-set of samples) from a data table. All rows will be preserved.}
+\title{Extract a sub-set of columns (such as a sub-set of samples) from a data table. All rows will be preserved.}
 \usage{
 extractcolumns(fnamein, fids, fnameout, wdir)
 }
 \arguments{
 \item{fnamein}{character vector that specifies the name of tab-delimited text file with the input data table.}
 
-\item{fids}{character vector that specifies the name of text file with column ids (such as sample ids). 
+\item{fids}{character vector that specifies the name of text file with column ids (such as sample ids).
 The file must contain one column id per line, without any trailing spaces or any other additional symbols.}
 
 \item{fnameout}{character vector that specifies the name of output file where the new data table will be saved.}
@@ -20,7 +20,7 @@ The file must contain one column id per line, without any trailing spaces or any
 no return value
 }
 \description{
-Extract a set of columns (such as a sub-set of samples) from a data table. All rows will be preserved.
+Extract a sub-set of columns (such as a sub-set of samples) from a data table. All rows will be preserved.
 }
 \examples{
 
@@ -34,8 +34,9 @@ library(kmcut)
 
 # Load example gene expression data table for 2 genes
 fdat = system.file("extdata", "example_genes_295.txt", package="kmcut")
+# Load a list that contains column (sample) ids
 idlist = system.file("extdata", "columnids.txt", package="kmcut")
-
+# Run the function
 extractcolumns(fnamein=fdat, fids=idlist, fnameout="example_samples_subset.txt", wdir="c:/test")
 
 This will create a tab-delimited text file in directory "c:/test":

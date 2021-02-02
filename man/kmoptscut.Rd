@@ -5,9 +5,19 @@
 \title{For each feature finds a cutoff that optimally stratifies samples into 2 groups, plots Kaplan-Meier survival curves for these groups,
 and observed vs. expected optimization plot. Does not use the permutation test to estimate the statistical significance of the optimal cutoff.}
 \usage{
-kmoptscut(fname, sfname, wdir, min_fraction = 0.1, min_up_down = 1,
-  peak_tolerance = 0.1, min_uval = 50, psort = FALSE,
-  wlabels = TRUE, wpdf = TRUE, verbose = TRUE)
+kmoptscut(
+  fname,
+  sfname,
+  wdir,
+  min_fraction = 0.1,
+  min_up_down = 1,
+  peak_tolerance = 0.1,
+  min_uval = 50,
+  psort = FALSE,
+  wlabels = TRUE,
+  wpdf = TRUE,
+  verbose = TRUE
+)
 }
 \arguments{
 \item{fname}{character vector that specifies the name of the file with feature(s) for each sample. The file must be tab-delimited,

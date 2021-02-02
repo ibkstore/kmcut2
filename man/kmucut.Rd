@@ -5,8 +5,16 @@
 \title{For each feature uses the user-supplied cutoff to stratify samples into 2 groups,
 plots Kaplan-Meier survival curves, and calculates the log-rank test p-value}
 \usage{
-kmucut(fname, sfname, wdir, cutoff, min_uval = 50, psort = FALSE,
-  wlabels = TRUE, wpdf = TRUE)
+kmucut(
+  fname,
+  sfname,
+  wdir,
+  cutoff,
+  min_uval = 50,
+  psort = FALSE,
+  wlabels = TRUE,
+  wpdf = TRUE
+)
 }
 \arguments{
 \item{fname}{character vector that specifies the name of the file with feature(s) for each sample. The file must be tab-delimited,

@@ -4,8 +4,7 @@
 \alias{ucoxbatch}
 \title{For each feature in the input file, this function performs a univariate Cox regression with the likelihood ratio test.}
 \usage{
-ucoxbatch(fname, sfname, wdir, min_uval = 50, psort = FALSE,
-  verbose = TRUE)
+ucoxbatch(fname, sfname, wdir, min_uval = 50, psort = FALSE, verbose = TRUE)
 }
 \arguments{
 \item{fname}{character vector that specifies the name of the file with feature(s) for each sample. The file must be tab-delimited,
